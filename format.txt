@@ -1,0 +1,13 @@
+ heading
+ filter navbar
+ cards
+->inside card  
+    1) One like button
+    2)Images
+    3)Content
+
+ using tost
+ -> react-tostify 
+
+ using react-icon
+ ->for heart icon
