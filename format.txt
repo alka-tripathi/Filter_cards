@@ -11,3 +11,5 @@
 
  using react-icon
  ->for heart icon
+
+ jab tak data fetch ho rha hai tab tak spinner ko dikhao

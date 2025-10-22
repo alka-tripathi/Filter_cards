@@ -1,0 +1,25 @@
+/* Center the loader and text */
+.custom-loader {
+  border: 8px solid #f3f3f3; /* Light grey background */
+  border-top: 8px solid #0d6efd; /* Blue color for the spinner */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite; /* Spin animation */
+  margin: 20px auto; /* Center horizontally */
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Loading text styling */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #0d6efd;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
