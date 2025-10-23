@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card.jsx';
+import './Cards.css';
 export default function Cards(props) {
   let courses = props.courses;
   // console.log(courses);
+  const [likedCourses, setLikedCourses] = useState([]);
 
   function getCourses() {
     let allCourses = [];
@@ -15,12 +17,14 @@ export default function Cards(props) {
   }
 
   return (
-    <div>
+    <div className="cards-container">
       {getCourses().map((course) => {
-        <Card
-          key={course.id}
-          course={course}
-        ></Card>;
+        return (
+          <Card
+            key={course.id}
+            data={course}
+          ></Card>
+        );
       })}
     </div>
   );
