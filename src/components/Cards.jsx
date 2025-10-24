@@ -4,7 +4,7 @@ import './Cards.css';
 export default function Cards(props) {
   let courses = props.courses;
   // console.log(courses);
-  const [likedCourses, setLikedCourses] = useState([]);
+  const [likedCourses, setLikedCourses] = useState([]); //no liked courses
 
   function getCourses() {
     let allCourses = [];
@@ -23,6 +23,8 @@ export default function Cards(props) {
           <Card
             key={course.id}
             data={course}
+            likedCourse={likedCourses}
+            setLikedCourse={setLikedCourses}
           ></Card>
         );
       })}
